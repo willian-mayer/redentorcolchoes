@@ -1,0 +1,17 @@
+[
+  {
+    "image": "/images/hero1.jpg",
+    "title": "Bienvenido a Redentor Colchões",
+    "description": "Comodidad y descanso como nunca antes."
+  },
+  {
+    "image": "/images/hero2.jpg",
+    "title": "Diseño moderno",
+    "description": "Colchones que se adaptan a tu vida."
+  },
+  {
+    "image": "/images/hero3.jpg",
+    "title": "Calidad garantizada",
+    "description": "Dormir bien es vivir mejor."
+  }
+]

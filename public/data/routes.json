@@ -1,0 +1,4 @@
+[
+  { "path": "/", "label": "Inicio" },
+  { "path": "/about", "label": "Acerca de" }
+]

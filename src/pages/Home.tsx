@@ -1,9 +1,13 @@
-import Testimonials from "../components/Testimonials"
+import BannerCTA from "../components/Banner";
+import Testimonials from "../components/Testimonials";
 
 function Home() {
   return (
-    <Testimonials />
-  )
+    <>
+      <Testimonials />
+      <BannerCTA />
+    </>
+  );
 }
 
-export default Home
+export default Home;

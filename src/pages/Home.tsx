@@ -1,7 +1,8 @@
+import Testimonials from "../components/Testimonials"
 
 function Home() {
   return (
-    <div>Home</div>
+    <Testimonials />
   )
 }
 

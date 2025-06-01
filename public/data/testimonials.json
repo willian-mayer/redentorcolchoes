@@ -1,0 +1,56 @@
+{
+  "title": "¿Por qué elegirnos?",
+  "description": "Nuestros clientes confían en nosotros porque ofrecemos calidad, confort y servicio excepcional. Mira lo que dicen:",
+  "testimonials": [
+    {
+      "author": "Camila Rodríguez",
+      "comment": "El colchón es increíble. Desde que lo uso, duermo mucho mejor.",
+      "stars": 5
+    },
+    {
+      "author": "Juan Pérez",
+      "comment": "Llegó rápido y la calidad es excelente. Lo recomiendo 100%.",
+      "stars": 5
+    },
+    {
+      "author": "Ana Torres",
+      "comment": "Tenía dudas pero me sorprendió lo cómodo que es. ¡Gracias!",
+      "stars": 5
+    },
+    {
+      "author": "Carlos Gómez",
+      "comment": "Me encanta el diseño y es muy firme, justo como lo quería.",
+      "stars": 5
+    },
+    {
+      "author": "Laura Martínez",
+      "comment": "La atención al cliente fue de primera. Muy satisfechos.",
+      "stars": 5
+    },
+    {
+      "author": "Sofía Herrera",
+      "comment": "Llevo semanas durmiendo como nunca. ¡Una maravilla!",
+      "stars": 5
+    },
+    {
+      "author": "Diego Ramírez",
+      "comment": "Calidad-precio insuperable. Muy feliz con mi compra.",
+      "stars": 5
+    },
+    {
+      "author": "Natalia Vargas",
+      "comment": "Lo usamos toda la familia. Muy cómodo y resistente.",
+      "stars": 5
+    },
+    {
+      "author": "Andrés Peña",
+      "comment": "Muy recomendable. Se nota la diferencia desde el primer día.",
+      "stars": 5
+    },
+    {
+      "author": "Mariana López",
+      "comment": "Un cambio total en mi descanso. ¡Excelente trabajo!",
+      "stars": 5
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "linha-supreme": [
+    {
+      "name": "Colchão Supreme Luxo",
+      "imageUrl": "/images/colchoes/supreme-luxo.jpg"
+    },
+    {
+      "name": "Colchão Supreme Soft",
+      "imageUrl": "/images/colchoes/supreme-soft.jpg"
+    }
+  ],
+  "pro-sanko": [
+    {
+      "name": "Colchão Pro-Sanko Ortopédico",
+      "imageUrl": "/images/colchoes/pro-sanko-ortopedico.jpg"
+    },
+    {
+      "name": "Colchão Pro-Sanko Classic",
+      "imageUrl": "/images/colchoes/pro-sanko-classic.jpg"
+    }
+  ],
+  "premium": [
+    {
+      "name": "Colchão Premium Confort",
+      "imageUrl": "/images/colchoes/premium-confort.jpg"
+    },
+    {
+      "name": "Colchão Premium Extra",
+      "imageUrl": "/images/colchoes/premium-extra.jpg"
+    }
+  ],
+  "pratica": [
+    {
+      "name": "Colchão Prática Econômico",
+      "imageUrl": "/images/colchoes/pratica-economico.jpg"
+    },
+    {
+      "name": "Colchão Prática Simples",
+      "imageUrl": "/images/colchoes/pratica-simples.jpg"
+    }
+  ],
+  "mola": [
+    {
+      "name": "Colchão de Mola Ensacada",
+      "imageUrl": "/images/colchoes/mola-ensacada.jpg"
+    },
+    {
+      "name": "Colchão de Mola Bonnel",
+      "imageUrl": "/images/colchoes/mola-bonnel.jpg"
+    }
+  ],
+  "latex": [
+    {
+      "name": "Colchão 100% Látex Natural",
+      "imageUrl": "/images/colchoes/latex-natural.jpg"
+    },
+    {
+      "name": "Colchão Látex Ortopédico",
+      "imageUrl": "/images/colchoes/latex-ortopedico.jpg"
+    }
+  ],
+  "hotel": [
+    {
+      "name": "Colchão Hotelaria Premium",
+      "imageUrl": "/images/colchoes/hotel-premium.jpg"
+    },
+    {
+      "name": "Colchão Hotel Comfort",
+      "imageUrl": "/images/colchoes/hotel-comfort.jpg"
+    }
+  ],
+  "hospitalar": [
+    {
+      "name": "Colchão Hospitalar Antichamas",
+      "imageUrl": "/images/colchoes/hospitalar-antichamas.jpg"
+    },
+    {
+      "name": "Colchão Hospitalar com Revestimento",
+      "imageUrl": "/images/colchoes/hospitalar-revestido.jpg"
+    }
+  ],
+  "espuma": [
+    {
+      "name": "Colchão de Espuma D28",
+      "imageUrl": "/images/colchoes/espuma-d28.jpg"
+    },
+    {
+      "name": "Colchão de Espuma Alta Densidade",
+      "imageUrl": "/images/colchoes/espuma-alta.jpg"
+    }
+  ],
+  "eco-sante": [
+    {
+      "name": "Colchão Eco Santé Natural",
+      "imageUrl": "/images/colchoes/eco-sante-natural.jpg"
+    },
+    {
+      "name": "Colchão Eco Santé Pro",
+      "imageUrl": "/images/colchoes/eco-sante-pro.jpg"
+    }
+  ],
+  "contour": [
+    {
+      "name": "Colchão Contour Foam",
+      "imageUrl": "/images/colchoes/contour-foam.jpg"
+    },
+    {
+      "name": "Colchão Contour Support",
+      "imageUrl": "/images/colchoes/contour-support.jpg"
+    }
+  ]
+}

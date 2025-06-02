@@ -1,6 +1,12 @@
+import About from "../components/About"
+import Testimonials from "../components/Testimonials"
+
 function SobreNos() {
   return (
-    <div>SobreNos</div>
+    <>
+        <About />
+        <Testimonials />
+    </>
   )
 }
 

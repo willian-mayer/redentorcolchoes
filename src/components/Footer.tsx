@@ -39,15 +39,18 @@ const Footer: React.FC<FooterProps> = ({ companyName }) => {
         {/* Navegación */}
         <div className="flex flex-col space-y-2">
           <h3 className="text-lg font-semibold mb-2">Navegación</h3>
-          {routes.map((route) => (
-            <Link
-              key={route.path}
-              to={route.path}
-              className="text-gray-300 hover:text-white transition"
-            >
-              {route.label}
-            </Link>
-          ))}
+          {routes.map((route) =>
+  route.path ? (
+    <Link
+      key={route.path}
+      to={route.path}
+      className="text-gray-300 hover:text-white transition"
+    >
+      {route.label}
+    </Link>
+  ) : null
+)}
+
         </div>
 
         {/* Redes sociales */}

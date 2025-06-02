@@ -1,7 +1,22 @@
 [
-  { "path": "/", "label": "Inicio" },
-  { "path": "/about", "label": "Nosotros" },
-  { "path": "/products", "label": "Productos" },
-  { "path": "/sobre-nos", "label": "Sobre Nós"},
+  { "path": "/", "label": "Início" },
+  {
+    "label": "Colchões",
+    "children": [
+      { "path": "/colchoes/supreme", "label": "Linha Supreme" },
+      { "path": "/colchoes/pro-sanko", "label": "Pro-Sanko" },
+      { "path": "/colchoes/premium", "label": "Premium" },
+      { "path": "/colchoes/pratica", "label": "Prática" },
+      { "path": "/colchoes/mola", "label": "Mola" },
+      { "path": "/colchoes/latex", "label": "Látex" },
+      { "path": "/colchoes/hotel", "label": "Hotel" },
+      { "path": "/colchoes/hospitalar", "label": "Hospitalar" },
+      { "path": "/colchoes/espuma", "label": "Espuma" },
+      { "path": "/colchoes/eco-sante", "label": "Eco Santé" },
+      { "path": "/colchoes/contour", "label": "Contour" }
+    ]
+  },
+  { "path": "/travesseiros", "label": "Travesseiros" },
+  { "path": "/sobre-nos", "label": "Sobre Nós" },
   { "path": "/contato", "label": "Contato" }
 ]

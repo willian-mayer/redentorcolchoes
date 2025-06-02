@@ -1,4 +1,5 @@
 export interface AppRoute {
-  path: string;
+  path?: string;
   label: string;
+  children?: AppRoute[];
 }

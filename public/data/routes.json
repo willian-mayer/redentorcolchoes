@@ -2,5 +2,6 @@
   { "path": "/", "label": "Inicio" },
   { "path": "/about", "label": "Nosotros" },
   { "path": "/products", "label": "Productos" },
-  { "path": "/contact", "label": "Contacto" }
+  { "path": "/sobre-nos", "label": "Sobre Nós"},
+  { "path": "/contato", "label": "Contacto" }
 ]

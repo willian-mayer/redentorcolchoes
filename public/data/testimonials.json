@@ -1,55 +1,55 @@
 {
-  "title": "¿Por qué elegirnos?",
-  "description": "Nuestros clientes confían en nosotros porque ofrecemos calidad, confort y servicio excepcional. Mira lo que dicen:",
+  "title": "Por que nos escolher?",
+  "description": "Nossos clientes confiam em nós porque oferecemos qualidade, conforto e um atendimento excepcional. Veja o que dizem:",
   "testimonials": [
     {
       "author": "Camila Rodríguez",
-      "comment": "El colchón es increíble. Desde que lo uso, duermo mucho mejor.",
+      "comment": "O colchão é incrível. Desde que comecei a usá-lo, durmo muito melhor.",
       "stars": 5
     },
     {
       "author": "Juan Pérez",
-      "comment": "Llegó rápido y la calidad es excelente. Lo recomiendo 100%.",
+      "comment": "Chegou rápido e a qualidade é excelente. Recomendo 100%.",
       "stars": 5
     },
     {
       "author": "Ana Torres",
-      "comment": "Tenía dudas pero me sorprendió lo cómodo que es. ¡Gracias!",
+      "comment": "Tinha dúvidas, mas fiquei surpresa com o quão confortável é. Obrigada!",
       "stars": 5
     },
     {
       "author": "Carlos Gómez",
-      "comment": "Me encanta el diseño y es muy firme, justo como lo quería.",
+      "comment": "Adoro o design e é bem firme, exatamente como eu queria.",
       "stars": 5
     },
     {
       "author": "Laura Martínez",
-      "comment": "La atención al cliente fue de primera. Muy satisfechos.",
+      "comment": "O atendimento ao cliente foi excelente. Muito satisfeitos.",
       "stars": 5
     },
     {
       "author": "Sofía Herrera",
-      "comment": "Llevo semanas durmiendo como nunca. ¡Una maravilla!",
+      "comment": "Faz semanas que durmo como nunca antes. Uma maravilha!",
       "stars": 5
     },
     {
       "author": "Diego Ramírez",
-      "comment": "Calidad-precio insuperable. Muy feliz con mi compra.",
+      "comment": "Custo-benefício imbatível. Muito feliz com minha compra.",
       "stars": 5
     },
     {
       "author": "Natalia Vargas",
-      "comment": "Lo usamos toda la familia. Muy cómodo y resistente.",
+      "comment": "Usamos com toda a família. Muito confortável e resistente.",
       "stars": 5
     },
     {
       "author": "Andrés Peña",
-      "comment": "Muy recomendable. Se nota la diferencia desde el primer día.",
+      "comment": "Muito recomendável. A diferença é notável desde o primeiro dia.",
       "stars": 5
     },
     {
       "author": "Mariana López",
-      "comment": "Un cambio total en mi descanso. ¡Excelente trabajo!",
+      "comment": "Mudança total no meu descanso. Excelente trabalho!",
       "stars": 5
     }
   ]

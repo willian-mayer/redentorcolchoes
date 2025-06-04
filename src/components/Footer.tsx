@@ -36,28 +36,27 @@ const Footer: React.FC<FooterProps> = ({ companyName }) => {
           )}
         </div>
 
-        {/* Navegación */}
+        {/* Navegação */}
         <div className="flex flex-col space-y-2">
-          <h3 className="text-lg font-semibold mb-2">Navegación</h3>
+          <h3 className="text-lg font-semibold mb-2">Navegação</h3>
           {routes.map((route) =>
-  route.path ? (
-    <Link
-      key={route.path}
-      to={route.path}
-      className="text-gray-300 hover:text-white transition"
-    >
-      {route.label}
-    </Link>
-  ) : null
-)}
-
+            route.path ? (
+              <Link
+                key={route.path}
+                to={route.path}
+                className="text-gray-300 hover:text-white transition"
+              >
+                {route.label}
+              </Link>
+            ) : null
+          )}
         </div>
 
-        {/* Redes sociales */}
+        {/* Redes sociais */}
         <div className="flex flex-col space-y-2">
-          <h3 className="text-lg font-semibold mb-2">Síguenos</h3>
+          <h3 className="text-lg font-semibold mb-2">Siga-nos</h3>
           <div className="flex space-x-4">
-            {/* Agrega href reales luego */}
+            {/* Adicione hrefs reais depois */}
             <a href="#" target="_blank" rel="noopener noreferrer">
               <Facebook className="h-6 w-6 hover:text-blue-500 transition" />
             </a>
@@ -69,7 +68,7 @@ const Footer: React.FC<FooterProps> = ({ companyName }) => {
       </div>
 
       <div className="text-center text-sm text-gray-400 mt-10">
-        © {currentYear} {companyName}. Todos los derechos reservados.
+        © {currentYear} {companyName}. Todos os direitos reservados.
       </div>
     </footer>
   );

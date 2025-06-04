@@ -10,7 +10,7 @@ import ColchoesList from './components/ColchoesList';
 function App() {
   return (
     <div className="min-h-screen">
-      <Navbar title="Mi Sitio" />
+      <Navbar title="Redentor Colchões" />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

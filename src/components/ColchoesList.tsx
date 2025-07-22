@@ -1,6 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import type { Colchao } from '../types/colchao';
+
+interface Colchao {
+  name: string;
+  imageUrl: string;
+  description?: string;
+  features?: string[];
+  price?: string;
+  dimensions?: string;
+  materials?: string;
+}
 
 interface ColchoesData {
   [category: string]: Colchao[];
@@ -10,6 +19,10 @@ const ColchoesList: React.FC = () => {
   const { category } = useParams();
   const [colchoes, setColchoes] = useState<Colchao[]>([]);
   const [title, setTitle] = useState<string>('');
+
+  // Modal state
+  const [selectedColchao, setSelectedColchao] = useState<Colchao | null>(null);
+  const [modalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
     fetch('/data/colchoes.json')
@@ -25,44 +38,93 @@ const ColchoesList: React.FC = () => {
       });
   }, [category]);
 
+  const openModal = (colchao: Colchao) => {
+    setSelectedColchao(colchao);
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setSelectedColchao(null);
+    setModalOpen(false);
+  };
+
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
-      <h1 className="text-3xl font-bold text-center mb-10">{title}</h1>
+      <h1 className="text-3xl font-bold text-center mb-8">{title}</h1>
 
       {colchoes.length > 0 ? (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {colchoes.map((colchao, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-xl transform hover:-translate-y-1 transition duration-300"
+              className="border rounded-lg border-gray-500 shadow hover:shadow-lg transition overflow-hidden flex flex-col"
             >
               <img
                 src={colchao.imageUrl}
                 alt={colchao.name}
-                className="w-full h-60 object-cover"
-                loading="lazy"
+                className="w-full h-48 object-contain bg-white"
+                style={{ maxHeight: '180px' }}
               />
-              <div className="p-5">
-                <h2 className="text-xl font-semibold text-gray-900 hover:text-blue-600 cursor-pointer transition">
-                  {colchao.name}
-                </h2>
-                {/* Ejemplo de precio si tienes ese dato */}
-                {/* <p className="mt-2 text-gray-700 font-medium">R$ {colchao.price}</p> */}
+              <div className="p-4 flex flex-col flex-grow">
+                <h2 className="text-lg font-semibold mb-4">{colchao.name}</h2>
                 <button
-                  type="button"
-                  className="mt-4 inline-block bg-blue-600 text-white font-semibold py-2 px-6 rounded-md hover:bg-blue-700 transition"
-                  onClick={() => alert(`Mais informações sobre: ${colchao.name}`)}
+                  onClick={() => openModal(colchao)}
+                  className="mt-auto bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
                 >
-                  Ver mais
+                  Saiba Mais
                 </button>
               </div>
             </div>
           ))}
         </div>
       ) : (
-        <p className="text-center text-gray-500 mt-16 text-lg">
-          Nenhum colchão encontrado para esta categoria.
-        </p>
+        <p className="text-center text-gray-500 mt-12">Nenhum colchão encontrado para esta categoria.</p>
+      )}
+
+      {/* Modal */}
+      {modalOpen && selectedColchao && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50"
+          onClick={closeModal}
+        >
+          <div
+            className="bg-white rounded-lg max-w-lg w-full p-6 relative"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              className="absolute top-3 right-3 text-gray-600 hover:text-gray-900 text-3xl font-bold"
+              onClick={closeModal}
+              aria-label="Cerrar modal"
+            >
+              &times;
+            </button>
+            <img
+              src={selectedColchao.imageUrl}
+              alt={selectedColchao.name}
+              className="w-full h-56 object-contain bg-white rounded"
+            />
+            <h2 className="text-2xl font-bold mt-4">{selectedColchao.name}</h2>
+            {selectedColchao.description && (
+              <p className="mt-2 text-gray-700">{selectedColchao.description}</p>
+            )}
+            {selectedColchao.features && (
+              <ul className="mt-3 list-disc list-inside text-gray-600">
+                {selectedColchao.features.map((feat, i) => (
+                  <li key={i}>{feat}</li>
+                ))}
+              </ul>
+            )}
+            {selectedColchao.price && (
+              <p className="mt-4 font-semibold text-lg">{selectedColchao.price}</p>
+            )}
+            {selectedColchao.dimensions && (
+              <p className="mt-1 text-gray-500">{selectedColchao.dimensions}</p>
+            )}
+            {selectedColchao.materials && (
+              <p className="mt-1 text-gray-500 italic">{selectedColchao.materials}</p>
+            )}
+          </div>
+        </div>
       )}
     </div>
   );

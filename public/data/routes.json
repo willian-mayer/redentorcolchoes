@@ -3,10 +3,9 @@
   {
     "label": "Colchões",
     "children": [
-      { "path": "/colchoes/supreme", "label": "Linha Supreme" },
+      { "path": "/colchoes/linha-supreme", "label": "Linha Supreme" },
       { "path": "/colchoes/pro-sanko", "label": "Pro-Sanko" },
       { "path": "/colchoes/premium", "label": "Premium" },
-      { "path": "/colchoes/pratica", "label": "Prática" },
       { "path": "/colchoes/mola", "label": "Mola" },
       { "path": "/colchoes/latex", "label": "Látex" },
       { "path": "/colchoes/hotel", "label": "Hotel" },

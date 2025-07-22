@@ -11,14 +11,14 @@ const ContactForm: React.FC = () => {
       .then(setContactInfo);
   }, []);
 
-const renderIcon = (iconName: string) => {
-  const LucideIcon = Icons[iconName as keyof typeof Icons] as React.FC<{ className?: string }>;
-  return LucideIcon ? <LucideIcon className="w-5 h-5 text-blue-600" /> : null;
-};
+  const renderIcon = (iconName: string) => {
+    const LucideIcon = Icons[iconName as keyof typeof Icons] as React.FC<{ className?: string }>;
+    return LucideIcon ? <LucideIcon className="w-5 h-5 text-blue-600" /> : null;
+  };
 
   return (
     <section className="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 lg:grid-cols-2 gap-10">
-      {/* Left side */}
+      {/* Lado esquerdo */}
       <div className="space-y-8">
         <iframe
           title="Google Maps"
@@ -43,7 +43,7 @@ const renderIcon = (iconName: string) => {
         </ul>
       </div>
 
-      {/* Right side */}
+      {/* Lado direito */}
       <form
         method="POST"
         action="https://formsubmit.co/fake@email.com"
@@ -54,14 +54,14 @@ const renderIcon = (iconName: string) => {
             type="text"
             name="firstName"
             required
-            placeholder="Nombre"
+            placeholder="Nome"
             className="border border-gray-300 px-4 py-2 rounded"
           />
           <input
             type="text"
             name="lastName"
             required
-            placeholder="Apellido"
+            placeholder="Sobrenome"
             className="border border-gray-300 px-4 py-2 rounded"
           />
         </div>
@@ -70,7 +70,7 @@ const renderIcon = (iconName: string) => {
           type="email"
           name="email"
           required
-          placeholder="Correo electrónico"
+          placeholder="E-mail"
           className="w-full border border-gray-300 px-4 py-2 rounded"
         />
 
@@ -87,7 +87,7 @@ const renderIcon = (iconName: string) => {
         <textarea
           name="message"
           required
-          placeholder="¿Qué deseas cotizar?"
+          placeholder="O que você deseja cotar?"
           className="w-full border border-gray-300 px-4 py-2 rounded h-32 resize-none"
         ></textarea>
 
@@ -95,7 +95,7 @@ const renderIcon = (iconName: string) => {
           type="submit"
           className="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition w-full"
         >
-          Enviar mensaje
+          Enviar mensagem
         </button>
       </form>
     </section>

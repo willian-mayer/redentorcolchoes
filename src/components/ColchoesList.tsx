@@ -32,11 +32,11 @@ const ColchoesList: React.FC = () => {
       {colchoes.length > 0 ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {colchoes.map((colchao, idx) => (
-            <div key={idx} className="border rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+            <div key={idx} className="border rounded-lg border-gray-500 shadow hover:shadow-lg transition overflow-hidden">
               <img
                 src={colchao.imageUrl}
                 alt={colchao.name}
-                className="w-full h-60 object-cover"
+                className="w-full h-60  px-2"
               />
               <div className="p-4">
                 <h2 className="text-lg font-semibold">{colchao.name}</h2>

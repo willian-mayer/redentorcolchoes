@@ -1,22 +1,22 @@
 [
   {
     "icon": "MapPin",
-    "title": "Dirección",
+    "title": "Endereço",
     "desc": "Rua Exemplo 123, São Paulo - SP"
   },
   {
     "icon": "Mail",
-    "title": "Correo Electrónico",
+    "title": "E-mail",
     "desc": "contacto@redentorcolchoes.com"
   },
   {
     "icon": "Phone",
-    "title": "Teléfono",
+    "title": "Telefone",
     "desc": "(11) 98765-4321"
   },
   {
     "icon": "Clock",
-    "title": "Horario de atención",
+    "title": "Horário de atendimento",
     "desc": "Lunes a Viernes, 8h - 18h"
   }
 ]
